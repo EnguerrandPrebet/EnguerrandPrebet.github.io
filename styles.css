@@ -20,17 +20,28 @@ header {
   background-color: #333;
   color: #fff;
   padding: 1rem;
-}
+  position: fixed;
+  width: 100%;
 
-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+#toggle-nav {
+  display: none; /* Hide the button on larger screens */
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  padding-right: 2rem;
 }
 
 nav li {
@@ -50,6 +61,7 @@ nav a {
 }
 
 .about {
+  padding-top: 80px; /* To prevent the menu from overlapping by default */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -100,20 +112,39 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav {
+  header {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
+  #toggle-nav {
+    display: block; /* Show the button on smaller screens */
+  }
+
+  nav {
+    display: none; /* Hide the navigation menu by default */
+  }
+
+  nav.active {
+    display: block; /* Show the navigation menu when active */
+  }
+
   nav ul {
     padding-top: 2em;
+    padding-right: 0;
     flex-direction: column;
     align-items: center;
   }
 
+  
   nav li {
     margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .about {
+      padding-top: 220px; /* To prevent the menu from overlapping by default */
   }
 
   .about-content {
