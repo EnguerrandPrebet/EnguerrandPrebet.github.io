@@ -8,10 +8,24 @@ body {
   font-family: Arial, sans-serif;
 }
 
+h1, h2, h3, a {
+  font-family: "Fira Sans";
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   background-color: #333;
   color: #fff;
   padding: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 nav ul {
@@ -30,8 +44,6 @@ nav a {
 
 .section {
   align-items: center;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
   width: 80%;
   margin: 0 auto;
   padding: 3rem;
@@ -64,12 +76,6 @@ nav a {
   border-radius: 10px;
 }
 
-.hero {
-  background-image: url('hero-image.jpg');
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-}
 
 .contact {
   display: flex;
@@ -94,7 +100,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   nav ul {
+    padding-top: 2em;
     flex-direction: column;
     align-items: center;
   }
