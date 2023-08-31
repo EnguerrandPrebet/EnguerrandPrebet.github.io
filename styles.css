@@ -74,7 +74,7 @@ nav a {
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 
 .about {
@@ -87,12 +87,13 @@ nav a {
 }
 
 .about-content {
-  min-width: 500px;
+  min-width: 600px;
+  width: 60%;
+  padding-bottom: 1rem;
 }
 
 .contact {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .contact-info {
@@ -105,18 +106,31 @@ nav a {
   border-radius: 10px;
 }
 
-
 .contact {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
+.interests {
+  min-width: 600px;
+  width: 60%;
+}
+
 .publi {
+  padding-top: 1em;
   min-width: 650px;
   width: 60%;
 }
 
+.publi ul {
+  list-style: none;
+}
+
+.teach li {
+  padding-bottom: 0;
+
+}
 
 footer {
   background-color: #333;
@@ -151,24 +165,29 @@ footer {
     margin-top: 1rem;
   }
 
-  .section {
-    padding: 1em 2em;
-  }
-
   .about {
     padding-top: 80px;
   }
-  
+
   .about-content {
     min-width: auto;
+    width: 100%;
   }
 
+  .contact-info{
+    padding-right: 0;
+  }
   /*.contact {
     margin-top: 2rem;
     padding-right: 0;
     margin-bottom: 2rem;
   }*/
 
+  .interests {
+    min-width: auto;
+    width: 100%;
+  }
+  
   .publi {
     width: 100%;
     min-width: auto;
