@@ -169,7 +169,7 @@ footer {
     padding-top: 80px;
   }
 
-  .about-content {
+  .about-content, .interests, .publi{
     min-width: auto;
     width: 100%;
   }
@@ -182,15 +182,5 @@ footer {
     padding-right: 0;
     margin-bottom: 2rem;
   }*/
-
-  .interests {
-    min-width: auto;
-    width: 100%;
-  }
-  
-  .publi {
-    width: 100%;
-    min-width: auto;
-  }
   
 }
